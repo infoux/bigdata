@@ -651,7 +651,7 @@ body.dashboard {
     .container {
       .container(100%);
       .left;
-      padding: 20px;
+      padding: 20px 20px 10px;
 
       ul.blocks {
         .zero;
@@ -666,22 +666,50 @@ body.dashboard {
           padding: 10px;
 
           &.width01 {
-            width: 20%;
+            width: calc(~"100% / 12");
           }
 
           &.width02 {
-            width: 40%;
+            width: calc(~"(100% / 12) * 2");
           }
 
           &.width03 {
-            width: 60%;
+            width: calc(~"(100% / 12) * 3");
           }
 
           &.width04 {
-            width: 80%;
+            width: calc(~"(100% / 12) * 4");
           }
 
           &.width05 {
+            width: calc(~"(100% / 12) * 5");
+          }
+
+          &.width06 {
+            width: calc(~"(100% / 12) * 6");
+          }
+
+          &.width07 {
+            width: calc(~"(100% / 12) * 7");
+          }
+
+          &.width08 {
+            width: calc(~"(100% / 12) * 8");
+          }
+
+          &.width09 {
+            width: calc(~"(100% / 12) * 9");
+          }
+
+          &.width10 {
+            width: calc(~"(100% / 12) * 10");
+          }
+
+          &.width11 {
+            width: calc(~"(100% / 12) * 11");
+          }
+
+          &.width12 {
             width: 100%;
           }
 
@@ -724,7 +752,7 @@ body.dashboard {
     .center;
     width: 100%;
     background: #ededed;
-    padding: 20px 0 50px;
+    padding: 5px 0;
 
     p {
       .mapazero;
