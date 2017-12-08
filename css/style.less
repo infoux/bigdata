@@ -1,6 +1,7 @@
 // out: ./style.css, compress: true, sourceMap: false
 @import "normalize.css";
 @import "rem.less";
+@import "fontello.css";
 /* fonts */
 @font-face {
   font-family: 'Nanum Barun Gothic';
@@ -582,7 +583,7 @@ body.dashboard {
         .ani(0.8s);
 
         &::before {
-          .drop-shadow (0, 0.25, 4px, 0, 2px);
+          .drop-shadow(0, 0.25, 4px, 0, 2px);
           .ani(0.4s);
         }
       }
@@ -652,6 +653,69 @@ body.dashboard {
       .container(100%);
       .left;
       padding: 20px 20px 10px;
+
+      div.navigation {
+        .right;
+        color:#333;
+        margin:0 20px 20px;
+
+        a {
+          color:#555;
+          &.home {
+            i {
+              color:#555 !important;
+            }
+          }
+        }
+
+        i {
+          color:@gray;
+
+ 
+        }
+
+      }
+
+      fieldset.search {
+        background: @white;
+        border-radius: 14px;
+        border: 1px solid #eaeaea;
+        margin:0 10px 10px;
+        padding:30px;
+
+        label {
+          color:#333;
+          padding:0 10px 0 0;
+        }
+
+        p.input-outline {
+          .inline-block;
+          .middle;
+          min-height:42px;
+
+          background:#ededed;
+          margin:0 30px 0 0;
+
+          input,
+          select {
+            border:none;
+            background:none;
+            padding:10px;
+            .middle;
+            min-height:42px;
+          }
+
+        }
+        
+        button {
+          height:42px;
+          border:none;
+          .top;
+          border-radius:3px;
+          padding:0 20px;
+          border-bottom:2px solid rgba(0,0,0,0.2);
+        }      
+      }
 
       ul.blocks {
         .zero;
@@ -785,6 +849,13 @@ body.dashboard {
         }
       }
     }
+
+    fieldset.search {
+      button {
+        background:#eba600;
+      }
+    }
+
   }
 
   &.tour {
@@ -801,6 +872,12 @@ body.dashboard {
         &::before {
           background: #ff900c;
         }
+      }
+    }
+
+    fieldset.search {
+      button {
+        background:#ff7e00;
       }
     }
   }
@@ -821,6 +898,13 @@ body.dashboard {
         }
       }
     }
+
+    fieldset.search {
+      button {
+        background:#72ab00;
+      }
+    }
+
   }
 
   &.basic {
@@ -838,6 +922,12 @@ body.dashboard {
           background: #00c2e5;
         }
       }
+    }
+  }
+
+  fieldset.search {
+    button {
+      background:#009ecf;
     }
   }
 }
