@@ -17,6 +17,24 @@
       "css": "right-open",
       "code": 61446,
       "src": "mfglabs"
+    },
+    {
+      "uid": "e67bcab050d99eb04d44027139ae05f5",
+      "css": "lock-open",
+      "code": 62739,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "b10e25220faa78c808527a4ba8b5c0f9",
+      "css": "lock-alt",
+      "code": 62736,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "df09e8471b1f0ffb10db52d28dd8104d",
+      "css": "folder-open",
+      "code": 59393,
+      "src": "elusive"
     }
   ]
 }
